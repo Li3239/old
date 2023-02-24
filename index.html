@@ -6,53 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Profil</title>
+    <title>LiLi's Profil</title>
+    <!-- favicon setting -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 </head>
 
 <body>
-    <!-- <div id="header">
-        <div id="link_block_in_header">
-            <ul id="ul_in_header">
-                <li class="li_in_header active">
-                    <img id="icon_header" src="/icon/icons8-account-32.png">
-                    <a href="#self">ABOUT ME</a>
-                </li>
-                <li class="li_in_header">
-                    <img id="icon_header" src="/icon/icons8-cv-50.png">
-                    <a href="#self">RESUME</a>
-                </li>
-                <li class="li_in_header"><a href="#self">PORTFOLIO</a></li>
-                <li class="li_in_header"><a href="#self">BLOG</a></li>
-                <li class="li_in_header"><a href="#self">CONTACT ME</a></li>
-            </ul>
-        </div>
-    </div> -->
-
-    <div class="body_flex_box">
+    <div class="body-flex-box space-from-top">
         <!-- Header block  -->
-        <div class="header_block bk_color_light">
-            <ul class="header_ul bk_color_light">
+        <nav class="header-block bk-color-light">
+            <ul class="bk-color-light">
                 <li class="active">
                     <a href="./index.html">ABOUT ME</a>
                 </li>
-                <li>
-                    <a href="#self">RESUME</a>
-                </li>
                 <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="#self">BLOG</a></li>
                 <li><a href="./contact.html">CONTACT ME</a></li>
             </ul>
-        </div>
+        </nav>
 
         <!-- Main block  -->
-        <main class="main_block bk_color_dark">
-            <div class="main_top space_from_top "><h1>Li  Li</h1></div>
-            <div class="main_down">
-                <div class="main_left">
-                    <div class="personal_img">
+        <main class="main-block bk-color-dark">
+            <div class="main-top">
+                <h1>Li Li</h1>
+            </div>
+            <div class="main-down">
+                <div class="main-left">
+                    <div class="personal-img">
                         <img class="img_square" src="./image/profil.jpeg" alt="personal photo" width="100px" height="100px">
                     </div>
-                    <div class="personal_detail">
+                    <div class="personal-detail">
                         <!-- Table -->
                         <table>
                             <tr>
@@ -91,53 +76,87 @@
                     </div>
                 </div>
         
-                <div class="main_right">
-
-                    <div>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. </div>
+                <div class="main-right">
+                    <article class="cv">
+                        <h1>Education <q><cite> Live and learn </cite></q></h1>
+                        <article class="cv-part">
+                            <h2>2023.01〜now</h2>
+                            <p>GritAcademy Yrkeshögskolan</p>
+                            <p>Utbildning: Webbutvecklare inriktning e-handel</p>
+                        </article>
+                        <article class="cv-part">
+                            <h2>2017.01〜2018.05</h2>
+                            <p>Malmö Yrkeshögskolan</p>
+                            <p>Utbildning: Advancerad Programering iOS och Android</p>
+                        </article>
+                        <article class="cv-part">
+                            <h2>1992.09〜1996.07</h2>
+                            <p>North University of China</p>
+                            <p>Computer Science</p>
+                        </article>
+                    </article>
+                    <article class="cv">
+                        <h1>Working Experience</h1>
+                        <article class="cv-part">
+                            <h2>2004.01〜2013.03</h2>
+                            <p>Softgiken Corporation</p>
+                            <p>System developer</p>
+                        </article>
+                        <article class="cv-part">
+                            <h2>2000.01〜2003.06</h2>
+                            <p>Value Cration Corporation</p>
+                            <p>System developer</p>
+                        </article>
+                        <article class="cv-part">
+                            <h2>1996.09〜1999.03</h2>
+                            <p>Agricultural Bank China,</p>
+                            <p>System developer</p>
+                        </article>
+                    </article>
                 </div>
             </div>
-            <div class="space_to_footer"></div>
+            <div class="space-to-footer"></div>
         </main>
 
         <!--  footer block -->
         <div class="footer">
-            <div class="footer_left">©2023 Li Li. All Rights Reserved.</div>
-            <div class="footer_right">
-                <div class="tele_and_email">
-                    <div class="tele_block">
-                        <div class="img_block">
-                            <img src="icon/tel-32.png" alt="telephone icon" class="image_icon">
+            <div class="footer-left">©2023 Li Li. All Rights Reserved.</div>
+            <div class="footer-right">
+                <div class="tele-and-email">
+                    <div class="tele-block">
+                        <div class="img-block">
+                            <img src="icon/tel-32.png" alt="telephone icon" class="image-icon">
                         </div>
-                        <div class="tele_detail">
-                            <div class="detail_head">Call</div>
-                            <div class="detail_detail">076 033 56 96</div>
+                        <div class="tele-detail">
+                            <div class="detail-head">Call</div>
+                            <div class="detail-detail">076 033 56 96</div>
                         </div>
                     </div>
-                    <div class="email_block">
-                        <div class="img_block">
-                            <img src="icon/mail-32.png" alt="mail icon" class="image_icon">
+                    <div class="email-block">
+                        <div class="img-block">
+                            <img src="icon/mail-32.png" alt="mail icon" class="image-icon">
                         </div>
-                        <div class="email_detail">
-                            <div class="detail_head">Email</div>
-                            <div class="detail_detail">palmlearnli@gmail.com</div>
+                        <div class="email-detail">
+                            <div class="detail-head">Email</div>
+                            <div class="detail-detail">palmlearnli@gmail.com</div>
                         </div>
                     </div>
                 </div>
-                <div class="social_contact">
-                    <div class="social_block">
-                        <div class="social_img_block">
-                            <img src="icon/add-new-32.png" class="image_icon">
+                <div class="social-contact">
+                    <div class="social-block">
+                        <div class="social-img-block">
+                            <img src="icon/add-new-32.png" class="image-icon">
                         </div>
-                        <div class="social_detail">
-                            <div class="detail_head">Contact me</div>
+                        <div class="social-detail">
+                            <div class="detail-head">Contact me</div>
                             <a target="_blank" href="https://www.facebook.com/ami.li.9843">
-                                <img src="icon/facebook-24.png" alt="facebook icon" class="image_icon">
+                                <img src="icon/facebook-24.png" alt="facebook icon" class="image-icon">
                             </a>
                             <a target="_blank" href="https://www.linkedin.com/in/li-li-46568a7b/">
-                                <img src="icon/linkedin-24.png" alt="linkedin icon" class="image_icon">
+                                <img src="icon/linkedin-24.png" alt="linkedin icon" class="image-icon">
                             </a>
                             <a target="_blank" href="https://twitter.com/Ami49105913">
-                                <img src="icon/twitter-24.png" alt="twitter icon" class="image_icon">
+                                <img src="icon/twitter-24.png" alt="twitter icon" class="image-icon">
                             </a>
                         </div>
                     </div>
