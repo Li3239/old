@@ -6,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Profil</title>
+    <title>Contact me</title>
+    <!-- favicon setting -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 </head>
 
 <body>
-    <div class="body-flex-box">
+    <div class="body-flex-box space-from-top">
         <!-- Header block  -->
-        <div class="header-block bk-color-light">
-            <ul class="header_ul bk-color-light">
+        <nav class="header-block bk-color-light">
+            <ul class="bk-color-light">
                 <li class="active">
                     <a href="./index.html">ABOUT ME</a>
                 </li>
-                <li><a href="#self">RESUME</a></li>
                 <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="#self">BLOG</a></li>
                 <li><a href="./contact.html">CONTACT ME</a></li>
             </ul>
-        </div>
+        </nav>
 
         <!-- Main block  -->
         <main class="grid-block bk-color-dark ">
-            <div class="grid-container space-from-top space-to-footer">
+            <div class="grid-container space-to-footer">
                 <!-- grid item child No1 -->
                 <div class="grid-item">
                     <img class="grid-img" src="https://www.dmv.ca.gov/portal/wp-content/themes/dmv/dist/images/illustrations/device_task_2.svg" alt="contact us">
@@ -34,14 +37,13 @@
 
                 <!-- grid item child No2 -->
                 <div class="grid-item">
-                    <!-- <div class="flex-box-form"> -->
-                    <div class="flex-line-tel">
+                    <div>
                         <img src="icon/facebook-24.png" alt="facebook icon" class="image-icon">
                         <img src="icon/linkedin-24.png" alt="linkedin icon" class="image-icon">
                         <img src="icon/twitter-24.png" alt="twitter icon" class="image-icon">
                     </div>
-                    <div class="flex-line-tel">Call +46 723 97 00 56</div>
-                    <div class="flex-line-tel">Email palmlearnli@gmail.com</div>
+                    <div><span style="background-color: rgb(223, 179, 120);">Call +46 723 97 00 56</span></div>
+                    <div><span style="background-color: rgb(223, 179, 120);">Email palmlearnli@gmail.com</span></div>
                     <!-- </div> -->
                 </div>
 
@@ -52,27 +54,28 @@
 
                 <!-- grid item child No4-No12 : Form -->
                 <form class="flex-box-form">
-                    <div class="flex-line">
-                        <label class="flex-label">Name: </label>
-                        <input class="flex-input" type="text" id="fullName">
+                    <div>
+                        <label for="fullName">Name: </label>
+                        <input id="fullName" type="text">
                     </div>
-                    <div class="flex-line">
-                        <label class="flex-label">Email: </label>
-                        <input class="flex-input" type="email" id="email">
+                    <div>
+                        <label for="email">Eongmail: </label>
+                        <input id="email" type="email" id="email">
                     </div>
-                    <div class="flex-line">
-                        <label class="flex-label" for="from">From:</label>
-                        <input class="flex-input" id="from" type="date" name="date">
-
-                        <label class="flex-label" for="to">To:</label>
-                        <input class="flex-input" id="to" type="date" name="date">
+                    <div>
+                        <label for="from">From:</label>
+                        <input id="from" type="date">
                     </div>
-                    <div class="flex-line-higher">
-                        <label class="flex-label" for="additionInfo" for="info">Additional info:</label>
-                        <textarea class="flex-input" id="info" name="additionInfo" cols="20" rows="5"></textarea>
+                    <div>
+                        <label for="to">To:</label>
+                        <input id="to" type="date">
                     </div>
-                    <div class="flex-line">
-                        <button class="flex-input">Send</button>
+                    <div class="flex-textarea">
+                        <label for="info">Additional info:</label>
+                        <textarea id="info" cols="20" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Send" />
                     </div>
                 </form>
             </div>
